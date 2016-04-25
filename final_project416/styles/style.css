@@ -1,0 +1,701 @@
+
+
+/*@font-face {
+    font-family: 'chelsea_iiregular';
+    src: url('chelseaii-webfont.eot');
+    src: url('chelseaii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chelseaii-webfont.woff2') format('woff2'),
+         url('chelseaii-webfont.woff') format('woff'),
+         url('chelseaii-webfont.ttf') format('truetype'),
+         url('chelseaii-webfont.svg#chelsea_iiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chelsearegular';
+    src: url('chelsea-webfont.eot');
+    src: url('chelsea-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chelsea-webfont.woff2') format('woff2'),
+         url('chelsea-webfont.woff') format('woff'),
+         url('chelsea-webfont.ttf') format('truetype'),
+         url('chelsea-webfont.svg#chelsearegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Limelight);
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Pathway+Gothic+One);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.intro{
+ width: 100%;
+ height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+}
+section h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Limelight', sans-serif; /*'Chelsea'*/
+  color: #BB504B;
+  font-size: 60px;
+  text-align: center;
+}
+
+section h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#section01 { 
+  /*background: url(http://s24.postimg.org/yx5kdf8w5/skyline.png) center center / cover no-repeat;*/
+  background-image: url(../images/skyline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 38%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #074e67;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #074e67;
+  border-bottom: 1px solid #074e67;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section02 {
+ background: #496763;
+}
+
+header {
+  font-family: 'Limelight', sans-serif;/*'Chelsea ii',*/
+  color: #496763;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 60px;
+}
+
+h1 {
+  font-size: 60px;
+  color: #BB504B;
+  font-family: 'Limelight', sans-serif;/*'Chelsea ii',*/
+}
+
+h3 {
+  padding: 10px;
+  font-size: 1.5em;
+  color: #343737;
+  text-align: center;
+}
+
+h1, h3 {
+  font-family: 'Limelight', sans-serif;/*'Chelsea ii',*/
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  background: #eae3cc;
+}
+
+.quiz {
+  margin: auto;
+}
+
+.box {
+  width: 30%;
+  height: 110px;
+  background-color: #BB504B;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 90%;
+  padding: 0px 10px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #cdc8b1;
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image:url(../images/map.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.map h1 {
+  margin: 20px;
+}
+
+#gherkinil:hover {
+  content: url(http://s18.postimg.org/jd7ij33x1/Screen_Shot_2016_04_12_at_7_35_11_PM.png);
+  /* no need for qoutes */
+ 
+}
+
+#bigbenil:hover {
+  content: url(http://s22.postimg.org/om71dkftp/Screen_Shot_2016_04_12_at_7_34_53_PM.png);
+  /* no need for qoutes */
+
+}
+
+
+#ldneyeil:hover {
+  content: url(http://s30.postimg.org/6xxcqkce5/Screen_Shot_2016_04_12_at_7_08_29_PM.png);
+  /* no need for qoutes */
+
+}
+
+
+.button {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#submit {
+  background-color: gray;
+  padding: .5em;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Limelight';
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+}
+
+#submit:hover {
+  border: none;
+  background: #074e67;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#quizanswer {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.bigbenimg, .historyimg, .nottinghillimg, .londoneyeimg, .buckinghamimg, .gherkinimg, .tatemodernimg, .boroughmarketimg {
+  position: absolute;
+  width: 10%; /*Change this size to your liking*/
+  height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+    margin: 0 auto;
+    border:3px solid #e5e5e5;
+  	max-width: 100%; /*width of the circle images can only get as big as the width of .camden, .city, .kensington, etc*/
+    margin-bottom: 10px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+}
+
+.illustrations {
+	height: 130%;
+	width: 130%;
+}
+
+/*below are examples on how you would position these points. I tested it and it's generally responsive. 
+Remember that top pushes it down, right pushes it left, you get the gist..
+.welcometoldn {
+  url(../images/ban.psd.svg);
+}*/
+
+.gherkinimg {
+  top: 30%;
+  right: 20%;  
+}
+
+.bigbenimg {
+  top: 25%;
+  right: 50%;  
+}
+
+.londoneyeimg {
+  top: 45%;
+  right: 45%;  
+}
+
+.boroughmarketimg {
+  top: 60%;
+  right: 20%;  
+}
+
+.tatemodernimg {
+  top: 50%;
+  right: 30%;
+}
+.buckinghamimg {
+  left: 19%;
+  bottom: 40%;
+}
+
+.nottinghillimg {
+  left: 7%;
+  bottom: 70%;
+}
+
+.historyimg {
+  left: 10%;
+  bottom: 50%;
+}
+
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 250px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+  
+  .tooltip-bottom:before,
+.tooltip-bottom:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+}
+
+.tooltip-bottom:before {
+  margin-top: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-bottom-color: #000;
+  border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+
+
+ .tooltip-left:before,
+.tooltip-right:before {
+  top: 3px;
+}
+
+.tooltip-left:after,
+.tooltip-right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}
+
+.bottom {
+
+}
+
+
+@media screen and (max-width:320px) {
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  header {
+    font-size: 40px;
+    width: 300px;
+  }
+  .quiz {
+    margin-top: 100px;
+  }
+  .box {
+    width: 45%;
+    height: 130px;
+  }
+  h1 {
+    font-size: 40px;
+    color: white;
+  }
+  h3 {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #053e52;
+    text-align: center;
+  }
+  span  {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+.map {
+    display: none;
+  }
+
+  }
+  }
+}
+
+@media screen and (min-width:321px) and (max-width:399px) {
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  header {
+    font-size: 40px;
+    width: 300px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 110px;
+    max-width: 320px;
+  }
+  .box {
+  width: 45%;
+    height: 130px;
+  }
+  h1 {
+    font-size: 40px;
+    color: white;
+    max-width: 320px;
+  }
+  h3 {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #343737;
+    text-align: center;
+  }
+  span {
+   font-size: 18px;
+    padding-top: 30px;
+  }
+  .map {
+    display: none;
+  }
+ 
+  }
+
+@media screen and (min-width:400px) and (max-width: 499px) {
+  header {
+    font-size: 40px;
+    width: 300px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 160px;
+    max-width: 400px;
+  }
+  .box {
+    width: 30%;
+    height: 110px;
+  }
+  .selected {
+    background-color: #cdc8b1;
+  }
+  h1 {
+    font-family: 'Limelight', sans-serif;
+    font-size: 40px;
+    color: #BB504B;
+    text-align: center;
+    max-width: 320px;
+  }
+  h2 {
+    font-family: 'Limelight', sans-serif;
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width: 599px) {
+  header {
+    font-size: 60px;
+    width: 500px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 150px;
+    max-width: 400px;
+  }
+  .box {
+    width: 30%;
+    height: 110px;
+  }
+  .selected {
+    background-color: #cdc8b1;
+  }
+  h1 {
+    font-family: 'Limelight', sans-serif;
+    font-size: 50px;
+    color: #BB504B;
+    text-align: center;
+    max-width: 500px;
+  }
+  h2 {
+    font-family: 'Limelight', sans-serif;
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  .map {
+    display: none;
+  }
+}
+
+/**tablet**/
+
+@media screen and (min-width:600px) and (max-width: 719px) {
+   header {
+    font-size: 60px;
+    width: 600px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 200px;
+    max-width: 600px;
+  }
+  .box {
+    width: 15%;
+    height: 80px;
+    margin: 3px;
+  }
+  .selected {
+    background-color: #cdc8b1;
+  }
+  h1 {
+    font-family: 'Limelight',  sans-serif; /*'Chelsea ii',*/
+    font-size: 50px;
+    color: #BB504B;
+    text-align: center;
+    margin: auto;
+  }
+
+  h2 {
+    font-family: 'Limelight',  sans-serif; /*'Chelsea ii',*/
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-bottom:20px;
+    font-size:12px;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .mobilemap {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:720px) and (max-width: 959px) {
+  header {
+    font-size: 60px;
+    width: 600px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 300px;
+    max-width: 600px;
+  }
+  .box {
+    width: 15%;
+    height: 80px;
+    margin: 3px;
+  }
+  .selected {
+    background-color: #cdc8b1;
+  }
+  h1 {
+    font-family: 'Limelight',  sans-serif; /*'Chelsea ii',*/
+    font-size: 50px;
+    color: #BB504B;
+    text-align: center;
+    margin: auto;
+  }
+  h2 {
+    font-family: 'Chelseaii', sans-serif;
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-bottom:20px;
+    font-size:12px;
+  }
+
+  .mobilemap {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width:960px) {
+  header {
+    font-size: 60px;
+    width: 600px;
+  }
+  .quiz {
+    margin: auto;
+    margin-top: 350px;
+    max-width: 950px;
+  }
+  .box {
+    width: 15%;
+    height: 130px;
+    margin: 5px;
+  }
+  .selected {
+    background-color: #cdc8b1;
+  }
+  h1 {
+    font-family: 'Limelight',  sans-serif; /*'Chelsea ii',*/
+    font-size: 50px;
+    color: #BB504B;
+    text-align: center;
+    margin: auto;
+  }
+  h2 {
+    font-family: 'Limelight',  sans-serif; /*'Chelsea ii',*/
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-top:20px;
+    font-size:18px;
+  }
+
+  .mobilemap {
+    display: none;
+  }
+  
+}
